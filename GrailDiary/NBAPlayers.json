@@ -1,0 +1,42 @@
+ [
+  {
+		"name": "Lebron James",
+		"position": "SG",
+		"category": "produce"
+  },
+  {
+		"name": "Stephen Curry",
+		"position": "PG",
+		"category": "canned goods"
+  },
+  {
+		"name": "Kevin Durant",
+		"position": "SG",
+		"category": "cereals"
+  },
+  {
+		"name": "Anthony Davis",
+		"position": "PF",
+		"category": "chips"
+  },
+  {
+		"name": "Russell Westbrook",
+		"position": "PG",
+		"category": "chips"
+  },
+  {
+		"name": "Kawhi Leonard",
+		"position": "SF",
+		"category": "seafood"
+  },
+  {
+		"name": "Damian Lillard",
+		"aisle": 2,
+		"category": "dry rice and beans"
+  },
+  {
+		"name": "Boar's Head turkey",
+		"aisle": 9,
+		"category": "deli"
+  }
+]

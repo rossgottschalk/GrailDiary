@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		5BD739801D4FB6EB005696EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7397F1D4FB6EB005696EC /* main.m */; };
 		5BD739831D4FB6EB005696EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739821D4FB6EB005696EC /* AppDelegate.m */; };
-		5BD739861D4FB6EB005696EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739851D4FB6EB005696EC /* ViewController.m */; };
 		5BD739891D4FB6EB005696EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD739871D4FB6EB005696EC /* Main.storyboard */; };
 		5BD7398B1D4FB6EB005696EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7398A1D4FB6EB005696EC /* Assets.xcassets */; };
 		5BD7398E1D4FB6EB005696EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7398C1D4FB6EB005696EC /* LaunchScreen.storyboard */; };
+		5BD739971D4FB748005696EC /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739961D4FB748005696EC /* MainTableViewController.m */; };
+		5BD7399A1D4FB9C5005696EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739991D4FB9C5005696EC /* DetailViewController.m */; };
+		5BD7399C1D4FC75F005696EC /* NBAPlayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7399B1D4FC75F005696EC /* NBAPlayers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,15 @@
 		5BD7397F1D4FB6EB005696EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BD739811D4FB6EB005696EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BD739821D4FB6EB005696EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5BD739841D4FB6EB005696EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5BD739851D4FB6EB005696EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5BD739881D4FB6EB005696EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BD7398A1D4FB6EB005696EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BD7398D1D4FB6EB005696EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BD7398F1D4FB6EB005696EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BD739951D4FB748005696EC /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		5BD739961D4FB748005696EC /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		5BD739981D4FB9C5005696EC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5BD739991D4FB9C5005696EC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5BD7399B1D4FC75F005696EC /* NBAPlayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NBAPlayers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +65,11 @@
 			children = (
 				5BD739811D4FB6EB005696EC /* AppDelegate.h */,
 				5BD739821D4FB6EB005696EC /* AppDelegate.m */,
-				5BD739841D4FB6EB005696EC /* ViewController.h */,
-				5BD739851D4FB6EB005696EC /* ViewController.m */,
+				5BD739951D4FB748005696EC /* MainTableViewController.h */,
+				5BD739961D4FB748005696EC /* MainTableViewController.m */,
+				5BD7399B1D4FC75F005696EC /* NBAPlayers.json */,
+				5BD739981D4FB9C5005696EC /* DetailViewController.h */,
+				5BD739991D4FB9C5005696EC /* DetailViewController.m */,
 				5BD739871D4FB6EB005696EC /* Main.storyboard */,
 				5BD7398A1D4FB6EB005696EC /* Assets.xcassets */,
 				5BD7398C1D4FB6EB005696EC /* LaunchScreen.storyboard */,
@@ -136,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD7399C1D4FC75F005696EC /* NBAPlayers.json in Resources */,
 				5BD7398E1D4FB6EB005696EC /* LaunchScreen.storyboard in Resources */,
 				5BD7398B1D4FB6EB005696EC /* Assets.xcassets in Resources */,
 				5BD739891D4FB6EB005696EC /* Main.storyboard in Resources */,
@@ -149,9 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD739861D4FB6EB005696EC /* ViewController.m in Sources */,
+				5BD739971D4FB748005696EC /* MainTableViewController.m in Sources */,
 				5BD739831D4FB6EB005696EC /* AppDelegate.m in Sources */,
 				5BD739801D4FB6EB005696EC /* main.m in Sources */,
+				5BD7399A1D4FB9C5005696EC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

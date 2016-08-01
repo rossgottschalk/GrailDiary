@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  GrailDiary
 //
 //  Created by Ross Gottschalk on 8/1/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DetailViewController : UIViewController
 
 @end
-
