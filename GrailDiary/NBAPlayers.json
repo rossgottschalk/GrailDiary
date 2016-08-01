@@ -2,7 +2,7 @@
   {
 		"name": "Lebron James",
 		"position": "SG",
-		"category": "produce"
+		"years": "produce"
   },
   {
 		"name": "Stephen Curry",
@@ -31,12 +31,22 @@
   },
   {
 		"name": "Damian Lillard",
-		"aisle": 2,
+		"position": "PG",
 		"category": "dry rice and beans"
   },
   {
-		"name": "Boar's Head turkey",
-		"aisle": 9,
+		"name": "DeMarcus Cousins",
+		"position": "C",
 		"category": "deli"
+  },
+  {
+        "name": "Klay Thompson",
+        "position": "SG",
+        "catergory": "stuff"
+  },
+  {
+        "name": "James Harden",
+        "position": "SG",
+        "catergory": "stuff"
   }
 ]
