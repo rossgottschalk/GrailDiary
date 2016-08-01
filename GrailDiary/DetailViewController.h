@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerDetail.h"
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic) PlayerDetail *player;
 
 @end

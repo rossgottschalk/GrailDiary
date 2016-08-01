@@ -9,6 +9,10 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *playerNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playerPositionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *playerTeamLabel;
+
 
 @end
 
@@ -16,6 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Player Bio";
+    self.playerNameLabel.text = self.player.name;
+    self.playerPositionLabel.text = self.player.position;
+    self.playerTeamLabel.text = self.player.team;
+    
     // Do any additional setup after loading the view.
 }
 
