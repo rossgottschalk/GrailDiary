@@ -7,11 +7,10 @@
 //
 
 #import "MainTableViewController.h"
+#import "PlayerDetail.h"
 
 @interface MainTableViewController ()
-@property (strong, nonatomic) NSDictionary *playerList;
-@property (strong, nonatomic) NSArray *playerName;
-@property (strong, nonatomic) NSArray *playerPosition;
+@property (strong, nonatomic) NSMutableArray *nbaPlayers;
 
 
 
@@ -22,15 +21,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"NBA Players";
-    self.playerList = @{@"Lebron James": @"SF", @"Stephen Curry": @"PG", @"Kevin Durant": @"SF", @"Anthony Davis": @"PF", @"Russell Westbrook": @"PG", @"Kawhi Leonard": @"SF", @"Damian Lillard": @"PG", @"DeMarcus Cousins": @"C", @"Klay Thompson": @"SG", @"James Harden": @"SG"}    ;
-    self.playerName = [self.playerList allKeys];
-    self.playerPosition = [self.playerList allValues];
+    self.nbaPlayers = [[NSMutableArray alloc] init];
+    [self loadNbaPlayers];
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)loadNbaPlayers
+{
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"NBAPlayers" ofType:@"json"];
+    NSArray *nbaPlayersJSON = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filepath] options:0 error:nil];
+    for (NSDictionary *aDict in nbaPlayersJSON)
+    {
+        PlayerDetail *aPlayer = [PlayerDetail playerDetailWithDictionary: aDict];
+        [self.nbaPlayers addObject:aPlayer];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,15 +58,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.playerList.count;
+    return self.nbaPlayers.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Player Cell" forIndexPath:indexPath];
-    cell.textLabel.text = self.playerName [indexPath.row];
-    cell.detailTextLabel.text = self.playerPosition [indexPath.row];
+    PlayerDetail *player = self.nbaPlayers [indexPath.row];
+    cell.textLabel.text = player.name;
+    cell.detailTextLabel.text = player.position;
     
     return cell;
 }

@@ -15,6 +15,7 @@
 		5BD739971D4FB748005696EC /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739961D4FB748005696EC /* MainTableViewController.m */; };
 		5BD7399A1D4FB9C5005696EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD739991D4FB9C5005696EC /* DetailViewController.m */; };
 		5BD7399C1D4FC75F005696EC /* NBAPlayers.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BD7399B1D4FC75F005696EC /* NBAPlayers.json */; };
+		5BD7399F1D4FD2EC005696EC /* PlayerDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD7399E1D4FD2EC005696EC /* PlayerDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		5BD739981D4FB9C5005696EC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		5BD739991D4FB9C5005696EC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		5BD7399B1D4FC75F005696EC /* NBAPlayers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NBAPlayers.json; sourceTree = "<group>"; };
+		5BD7399D1D4FD2EC005696EC /* PlayerDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetail.h; sourceTree = "<group>"; };
+		5BD7399E1D4FD2EC005696EC /* PlayerDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				5BD739951D4FB748005696EC /* MainTableViewController.h */,
 				5BD739961D4FB748005696EC /* MainTableViewController.m */,
 				5BD7399B1D4FC75F005696EC /* NBAPlayers.json */,
+				5BD7399D1D4FD2EC005696EC /* PlayerDetail.h */,
+				5BD7399E1D4FD2EC005696EC /* PlayerDetail.m */,
 				5BD739981D4FB9C5005696EC /* DetailViewController.h */,
 				5BD739991D4FB9C5005696EC /* DetailViewController.m */,
 				5BD739871D4FB6EB005696EC /* Main.storyboard */,
@@ -160,6 +165,7 @@
 			files = (
 				5BD739971D4FB748005696EC /* MainTableViewController.m in Sources */,
 				5BD739831D4FB6EB005696EC /* AppDelegate.m in Sources */,
+				5BD7399F1D4FD2EC005696EC /* PlayerDetail.m in Sources */,
 				5BD739801D4FB6EB005696EC /* main.m in Sources */,
 				5BD7399A1D4FB9C5005696EC /* DetailViewController.m in Sources */,
 			);

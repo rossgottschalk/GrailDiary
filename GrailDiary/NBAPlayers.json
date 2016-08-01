@@ -2,51 +2,51 @@
   {
 		"name": "Lebron James",
 		"position": "SG",
-		"years": "produce"
+		"team": "Cleveland Cavaliers"
   },
   {
 		"name": "Stephen Curry",
 		"position": "PG",
-		"category": "canned goods"
+		"team": "Golden State Warriors"
   },
   {
 		"name": "Kevin Durant",
 		"position": "SG",
-		"category": "cereals"
+		"team": "Golden State Warriors"
   },
   {
 		"name": "Anthony Davis",
 		"position": "PF",
-		"category": "chips"
+		"team": "New Orleans Pelicans"
   },
   {
 		"name": "Russell Westbrook",
 		"position": "PG",
-		"category": "chips"
+		"team": "Oklahoma City Thunder"
   },
   {
 		"name": "Kawhi Leonard",
 		"position": "SF",
-		"category": "seafood"
+		"team": "San Antonio Spurs"
   },
   {
 		"name": "Damian Lillard",
 		"position": "PG",
-		"category": "dry rice and beans"
+		"team": "Portland Trail Blazers"
   },
   {
 		"name": "DeMarcus Cousins",
 		"position": "C",
-		"category": "deli"
+		"team": "Sacramento Kings"
   },
   {
         "name": "Klay Thompson",
         "position": "SG",
-        "catergory": "stuff"
+        "team": "Golden State Warriors"
   },
   {
         "name": "James Harden",
         "position": "SG",
-        "catergory": "stuff"
+        "team": "Houston Rockets"
   }
 ]
