@@ -12,6 +12,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *playerNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playerPositionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *playerTeamLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *playerImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *teamLogoImageView;
+@property (weak, nonatomic) IBOutlet UILabel *accoladesLabel;
 
 
 @end
@@ -24,6 +27,9 @@
     self.playerNameLabel.text = self.player.name;
     self.playerPositionLabel.text = self.player.position;
     self.playerTeamLabel.text = self.player.team;
+    self.playerImageView.image = [UIImage imageNamed:self.player.picture];
+    self.teamLogoImageView.image = [UIImage imageNamed:self.player.teamLogo];
+    self.accoladesLabel.text = self.player.accolades;
     
     // Do any additional setup after loading the view.
 }

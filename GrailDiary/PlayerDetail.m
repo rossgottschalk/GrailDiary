@@ -19,6 +19,9 @@
         aPlayer.name = [playerDetailDict objectForKey:@"name"];
         aPlayer.position = [playerDetailDict objectForKey:@"position"];
         aPlayer.team = [playerDetailDict objectForKey:@"team"];
+        aPlayer.picture = [playerDetailDict objectForKey:@"picture"];
+        aPlayer.teamLogo = [playerDetailDict objectForKey:@"teamLogo"];
+        aPlayer.accolades = [playerDetailDict objectForKey:@"accolades"];
     }
     return aPlayer;
 }

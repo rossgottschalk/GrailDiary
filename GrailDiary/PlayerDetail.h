@@ -13,6 +13,9 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *position;
 @property (nonatomic) NSString *team;
+@property (nonatomic) NSString *picture;
+@property (nonatomic) NSString *teamLogo;
+@property (nonatomic) NSString *accolades;
 
 + (PlayerDetail *)playerDetailWithDictionary: (NSDictionary *)playerDetailDict;
 
